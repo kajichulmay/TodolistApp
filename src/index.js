@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { TodolistContextProvider } from './context/TodolistContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TodolistContextProvider>
+      <App />
+    </TodolistContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
